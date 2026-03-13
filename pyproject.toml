@@ -1,0 +1,61 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastapi-2"
+version = "0.1.0"
+description = "A sample Python project configured with pyproject.toml"
+requires-python = ">=3.14"
+license = {text = "MIT"}
+authors = [
+    {name = "Author Name", email = "author@example.com"},
+]
+maintainers = [
+    {name = "Maintainer Name", email = "maintainer@example.com"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = [
+    "fastapi[standard]>=0.116.2",
+    "fastapi-pagination>=0.14.1",
+    "uvicorn >= 0.40.0",
+    "SQLALchemy>=2.0.46",
+    "asyncpg>=0.31.0", # for Postgres async
+    "aiosqlite>=0.22.1", # for sqlite
+    "python-dotenv>=1.2.2",
+    "alembic>=1.18.4",
+    # opentelemetry
+    "opentelemetry-api>=1.40.0",
+    "opentelemetry-sdk>=1.40.0",
+    "opentelemetry-instrumentation-fastapi>=0.61b0",
+    "opentelemetry-exporter-otlp>=1.40.0"
+    # "requests>=2.28.0",
+    # "pandas~=2.0.0",
+]
+
+[project.optional-dependencies]
+# dev = [
+#    "pytest",
+#    "black",
+#    "mypy",
+#]
+
+# [project.urls]
+# Homepage = "https://github.com"
+# Documentation = "https://my-awesome-project.readthedocs.io"
+# Repository = "https://github.com.git"
+
+# [project.scripts]
+# Define command-line entry points
+# my-script-name = "my_project_module:main_function"
+
+# Configuration for specific tools (example for black formatter)
+# [tool.black]
+# line-length = 88
+# include = '\.pyi?$'
+
